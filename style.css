@@ -18,8 +18,8 @@
 
 html {
   font-size: 93.75%; /* 15px */
+  font-family: sans-serif;
   color: #ffffff;
-  text-align: center;
 }
 
 body {
@@ -31,7 +31,6 @@ body {
   "footer footer footer";
   grid-template-columns: 20vw 60vw 20vw;
   grid-template-rows: 12vh 7vh 71vh 10vh;
-  grid-gap: 5px;
 }
 
 /* Header ===================== */
@@ -39,6 +38,9 @@ body {
 .header-grid {
   grid-area: header;
   background-color: var(--header-and-footer);
+  text-align: center;
+  display: grid;
+  align-items: center;
 }
 
 .main-nav-grid {
@@ -50,24 +52,31 @@ body {
   grid-area: nav;
   background-color: var(--col-backgrounds);
   color: var(--col-texts);
-  border-style: none dotted none none;
+  border-right: dotted 2px;
   border-color: var(--main-menu-and-lines);
 }
 
 .main-col-grid {
   grid-area: main;
   background-color: var(--col-backgrounds);
-  color: var(--col-texts);
+  color: var(--col-texts);  
 }
 
 .aside-col-grid {
   grid-area: aside;
   background-color: var(--col-backgrounds);
   color: var(--col-texts);
+  border-left: dotted 2px;
+  border-color: var(--main-menu-and-lines);
 }
 
 .footer-grid {
   grid-area: footer;
   background-color: var(--header-and-footer);
   color: black;
+  border-top: solid 2px;
+  border-color: var(--main-menu-and-lines);
+  text-align: center;
+  display: grid;
+  align-items: center;
 }
