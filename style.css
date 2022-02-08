@@ -1,3 +1,5 @@
+/* Global ===================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +11,46 @@
 
 html {
   font-size: 93.75%; /* 15px */
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "menu menu menu"
+  "nav main aside"
+  "footer footer footer";
+  background-color: yellow;
+}
+
+/* Header ===================== */
+
+.header-grid {
+  grid-area: header;
+  background-color: red;
+}
+
+.main-nav-grid {
+  grid-area: menu;
+  background-color: blue;
+}
+
+.col-nav-grid {
+  grid-area: nav;
+  background-color: orange;
+}
+
+.main-col-grid {
+  grid-area: main;
+  background-color: green;
+}
+
+.aside-col-grid {
+  grid-area: aside;
+  background-color: magenta;
+}
+
+.footer-grid {
+  grid-area: footer;
+  background-color: navy;
 }
