@@ -46,6 +46,8 @@ body {
 .main-nav-grid {
   grid-area: menu;
   background-color: var(--main-menu-and-lines);
+  display: grid;
+  align-items: center;
 }
 
 .col-nav-grid {
@@ -53,7 +55,7 @@ body {
   background-color: var(--col-backgrounds);
   color: var(--col-texts);
   border-right: dotted 2px;
-  border-color: var(--main-menu-and-lines);
+  border-color: var(--main-menu-and-lines);  
 }
 
 .main-col-grid {
@@ -79,4 +81,12 @@ body {
   text-align: center;
   display: grid;
   align-items: center;
+}
+
+.col-text {
+  margin-top: 1vh;
+}
+
+p {
+  margin-left: 1.5vh;
 }
