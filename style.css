@@ -1,4 +1,11 @@
 /* Global ===================== */
+  
+:root {
+  --header-and-footer: #8acc9b;
+  --main-menu-and-lines: #cc3300;
+  --col-texts: #cc3300;
+  --col-backgrounds: #ffffff;
+}
 
 * {
   margin: 0;
@@ -11,6 +18,8 @@
 
 html {
   font-size: 93.75%; /* 15px */
+  color: #ffffff;
+  text-align: center;
 }
 
 body {
@@ -22,37 +31,43 @@ body {
   "footer footer footer";
   grid-template-columns: 20vw 60vw 20vw;
   grid-template-rows: 12vh 7vh 71vh 10vh;
-  background-color: yellow;
+  grid-gap: 5px;
 }
 
 /* Header ===================== */
 
 .header-grid {
   grid-area: header;
-  background-color: red;
+  background-color: var(--header-and-footer);
 }
 
 .main-nav-grid {
   grid-area: menu;
-  background-color: blue;
+  background-color: var(--main-menu-and-lines);
 }
 
 .col-nav-grid {
   grid-area: nav;
-  background-color: orange;
+  background-color: var(--col-backgrounds);
+  color: var(--col-texts);
+  border-style: none dotted none none;
+  border-color: var(--main-menu-and-lines);
 }
 
 .main-col-grid {
   grid-area: main;
-  background-color: green;
+  background-color: var(--col-backgrounds);
+  color: var(--col-texts);
 }
 
 .aside-col-grid {
   grid-area: aside;
-  background-color: magenta;
+  background-color: var(--col-backgrounds);
+  color: var(--col-texts);
 }
 
 .footer-grid {
   grid-area: footer;
-  background-color: navy;
+  background-color: var(--header-and-footer);
+  color: black;
 }
