@@ -30,7 +30,7 @@ body {
   "nav main aside"
   "footer footer footer";
   grid-template-columns: 20vw 60vw 20vw;
-  grid-template-rows: 12vh 7vh 71vh 10vh;
+  grid-template-rows: 12vh 7vh auto 10vh;
 }
 
 /* Header ===================== */
@@ -61,7 +61,7 @@ body {
 .main-col-grid {
   grid-area: main;
   background-color: var(--col-backgrounds);
-  color: var(--col-texts);  
+  color: var(--col-texts); 
 }
 
 .aside-col-grid {
@@ -89,4 +89,20 @@ body {
 
 p {
   margin-left: 1.5vh;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  border: .5px solid #000000;
+}
+
+
+table, td {
+  border: 1.5px solid #000000;    
+  border-collapse: collapse;
+}
+
+td {  
+  padding: 10px;
 }
